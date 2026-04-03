@@ -43,7 +43,7 @@ cp env_sample .env
 ### Run with Docker Compose
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 ### Run manually
