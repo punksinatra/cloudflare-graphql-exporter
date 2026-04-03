@@ -1,0 +1,8 @@
+# Rename file to .env and fill up necessary data
+CF_API_TOKEN=
+CF_ACCOUNT_ID=
+CF_ZONE_IDS=
+REFRESH_MINUTES=5 # Set a refresh number
+LOCAL_TZ= # Set timezone
+TZ= # Set timezone
+EXPORTER_ADDR=:2112 # Change to your chosen port

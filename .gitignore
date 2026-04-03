@@ -1,0 +1,15 @@
+# Ignore scripts
+backup_git.sh
+check_metrics.sh
+
+# Ignore env files
+.env
+.env*
+*.env
+
+# Logs
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db

@@ -1,0 +1,15 @@
+services:
+  cloudflare-graphql-exporter:
+    build: .
+    image: cloudflare-graphql-exporter
+    container_name: cloudflare-graphql-exporter
+    restart: unless-stopped
+    ports:
+      - "2112:2112"
+    env_file:
+      - .env
+    volumes:
+      # This correctly mounts only the log file
+      - /mnt/WD500GB/Dockers/cloudflare_graphql_exporter/exporter.log:/app/exporter.log
+    environment:
+      - TZ=${TZ} 
