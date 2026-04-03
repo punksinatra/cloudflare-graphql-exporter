@@ -13,10 +13,10 @@ CF_ZONE_IDS=zone_id_1,zone_id_2,zone_id_3
 REFRESH_MINUTES=5
 
 # Local timezone (used for reporting metrics)
-LOCAL_TZ=Asia/Kuala_Lumpur
+LOCAL_TZ=
 
 # Optional: system TZ environment variable (usually same as LOCAL_TZ)
-TZ=Asia/Kuala_Lumpur
+TZ=
 
 # Exporter listen address, default is :2112
 EXPORTER_ADDR=:2112
