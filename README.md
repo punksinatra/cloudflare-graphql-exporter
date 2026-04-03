@@ -19,16 +19,24 @@ A Prometheus exporter for Cloudflare metrics, built in Go and designed to run in
 
 ## Environment Variables
 
-Create `.env` file
+1. Copy the sample environment file:
 
-Copy `env_sample` to `.env` and fill in your Cloudflare credentials:
+```bash
+cp env_sample .env
+```
 
-- `CF_API_TOKEN` **(required)** - Cloudflare API token
-- `CF_ACCOUNT_ID` **(required)** - Cloudflare account ID
-- `CF_ZONE_IDS` **(required)** - Comma-separated list of Cloudflare Zone IDs
-- `EXPORTER_ADDR` - Optional. Default `:2112`
-- `REFRESH_MINUTES` - Optional. Refresh interval in minutes. Default 5
-- `LOCAL_TZ` - Optional. Timezone for metrics. Default `UTC`
+2. Edit `.env` and fill in your Cloudflare credentials:
+
+| Variable | Required | Description | Default |
+|----------|----------|-------------|---------|
+| `CF_API_TOKEN` | Yes | Cloudflare API token | - |
+| `CF_ACCOUNT_ID` | Yes | Cloudflare account ID | - |
+| `CF_ZONE_IDS` | Yes | Comma-separated list of Cloudflare Zone IDs | - |
+| `EXPORTER_ADDR` | No | Address/port to expose metrics | `:2112` |
+| `REFRESH_MINUTES` | No | Refresh interval in minutes | `5` |
+| `LOCAL_TZ` | No | Timezone for metrics | `UTC` |
+
+> **Note:** The `env_sample` file is for public distribution and contains placeholders. Do **not** commit your real `.env` to version control.
 
 ## Usage
 

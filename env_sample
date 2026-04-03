@@ -1,8 +1,22 @@
 # Rename file to .env and fill up necessary data
-CF_API_TOKEN=
-CF_ACCOUNT_ID=
-CF_ZONE_IDS=
-REFRESH_MINUTES=5 # Set a refresh number
-LOCAL_TZ= # Set timezone
-TZ= # Set timezone
-EXPORTER_ADDR=:2112 # Change to your chosen port
+
+# Your Cloudflare API token with permissions to read analytics
+CF_API_TOKEN=your_cloudflare_api_token_here
+
+# Your Cloudflare account ID
+CF_ACCOUNT_ID=your_cloudflare_account_id_here
+
+# Comma-separated list of your zone IDs
+CF_ZONE_IDS=zone_id_1,zone_id_2,zone_id_3
+
+# How often to refresh data (in minutes)
+REFRESH_MINUTES=5
+
+# Local timezone (used for reporting metrics)
+LOCAL_TZ=Asia/Kuala_Lumpur
+
+# Optional: system TZ environment variable (usually same as LOCAL_TZ)
+TZ=Asia/Kuala_Lumpur
+
+# Exporter listen address, default is :2112
+EXPORTER_ADDR=:2112
